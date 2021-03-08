@@ -4,23 +4,23 @@
 This is a simple application that allows you to create, edit and view notes. 
 Please note this is only the API, there is no frontend.  
 
-This application was written with .NET core 3.1 and utilizes Entity Framework for handling the data. For this app, note data will only be stored in local memory temporally since this will not be distributed. However, if needed this could easily be attached to live SQL database to store note contents. 
+This application was written with .NET core 3.1 and utilizes Entity Framework for handling the data storage. For this app, note data will only be stored in local memory temporally since this will not be distributed. However, if needed, this could easily be attached to live SQL database to store notes. 
 
 ## Running the application 
 Once the code is cloned from github. Open up the solution in Visual Studio. Next, to keep things simple, just compile and run the code in the IIS express server. This should be all that is required to test this simple API. 
-## Postman Validations. 
-Once you have the IIS Server running, you can then begin to use this API
-To test this API, I have added some pre-defined postman calls. in the following files **Notes Example.postman_collection.json** 
 
+## Postman Validations. 
+Once you have the IIS Server running, you can then begin to use this API. 
+To test this API, I have added some pre-defined postman calls. in the following files **Notes Example.postman_collection.json** 
 
 ## Notes Payload
 Each note has the following information 
+
 UserName - The user how creates the note
 Title - note title 
 Contents - the information in the note.
 Create Date  - date created
 Edit Date - Date last edited 
-
 
 
 ## API Overview
@@ -67,9 +67,7 @@ Example Payload
  
  
  ### Further Information 
- Because this was an example i limited the capabilties just to what the assment was. If this was a real app, there would be many more features needed. 
+ Because this was an example i limited the capabilities just to what the assment was. If this was a real app, there would be many more features needed. 
+ I also ran out of time, but there are a few unit tests that i would have liked to add to this. 
  
  
- 
-
-
