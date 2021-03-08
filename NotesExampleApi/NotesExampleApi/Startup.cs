@@ -29,6 +29,8 @@ namespace NotesExampleApi
         {
             services.AddControllers();
 
+            //This is how I store the notes. They are only perstant will the applicaiton is running, 
+            //This is normally just used for testing, the a real SQl DB can be hooked up later 
             services.AddDbContext<NotesExampleContext>(opt => opt.UseInMemoryDatabase("AllNotes"));
         }
 

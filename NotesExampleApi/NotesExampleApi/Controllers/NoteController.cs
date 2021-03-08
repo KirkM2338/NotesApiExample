@@ -81,6 +81,7 @@ namespace NotesExampleApi.Controllers
                  _context.notes.Add(noteModel);
                 await _context.SaveChangesAsync();
 
+                //Returning the note created so the payload will show the ID
                 return noteModel;
             }
 
