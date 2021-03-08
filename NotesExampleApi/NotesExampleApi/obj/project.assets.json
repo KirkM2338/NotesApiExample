@@ -559,11 +559,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kirk Montrose\\source\\repos\\KirkM2338\\NotesApiExample\\NotesExampleApi\\NotesExampleApi\\NotesExampleApi.csproj",
+      "projectUniqueName": "C:\\Users\\Kirk Montrose\\Documents\\GitHub\\NotesApiExample\\NotesExampleApi\\NotesExampleApi\\NotesExampleApi.csproj",
       "projectName": "NotesExampleApi",
-      "projectPath": "C:\\Users\\Kirk Montrose\\source\\repos\\KirkM2338\\NotesApiExample\\NotesExampleApi\\NotesExampleApi\\NotesExampleApi.csproj",
+      "projectPath": "C:\\Users\\Kirk Montrose\\Documents\\GitHub\\NotesApiExample\\NotesExampleApi\\NotesExampleApi\\NotesExampleApi.csproj",
       "packagesPath": "C:\\Users\\Kirk Montrose\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kirk Montrose\\source\\repos\\KirkM2338\\NotesApiExample\\NotesExampleApi\\NotesExampleApi\\obj\\",
+      "outputPath": "C:\\Users\\Kirk Montrose\\Documents\\GitHub\\NotesApiExample\\NotesExampleApi\\NotesExampleApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Kirk Montrose\\AppData\\Roaming\\NuGet\\NuGet.Config",
