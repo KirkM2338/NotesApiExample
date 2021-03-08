@@ -29,8 +29,46 @@ Route https://localhost:44363/note/createnote
 
 Returns all notes created in JSON 
 
-### Get Single Notes
-Route https://localhost:44363/note/createnote/#
-Returns single note designed by ID in JSON 
+### Get Single Note
+Route https://localhost:44363/note/#
+Returns single note designated by ID in JSON 
+
+### Create Note 
+Route https://localhost:44363/note/createnote/
+
+Example Body 
+{
+    "userName":"Kirk Montrose",
+    "contents":"This is what a note is!",
+    "Title":"Example :)"
+ }
+ 
+ ### Delete Note 
+Route https://localhost:44363/note/delete/#
+Deletes the note with designated by ID, 
+This should return 200 status code on succces. 
+
+EditNote
+Route https://localhost:44363/noteapi/edit/#
+Edits an existing note given a note ID and the updated body 
+
+Example Payload 
+{
+    "userName":"Kirk Montrose",
+    "contents":"Updated Content",
+    "Title":"Example :) Update"
+ }
+  
+ ### Create x random notes 
+ Route  https://localhost:44363/noteapi/createrandomnotesfortesting/#
+ This is simply for testing purposes for this example. This will create any number of notes passed as the aurgument. 
+ To create the note, the API generates random numbers and letters for the title content and user name. 
+ 
+ 
+ ### Further Information 
+ Because this was an example i limited the capabilties just to what the assment was. If this was a real app, there would be many more features needed. 
+ 
+ 
+ 
 
 
