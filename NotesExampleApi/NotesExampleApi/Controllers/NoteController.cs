@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using NotesExampleApi.Models;
-using NotesExampleApi.Services;
 
 namespace NotesExampleApi.Controllers
 {
