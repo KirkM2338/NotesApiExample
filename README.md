@@ -22,7 +22,7 @@ Edit Date - Date last edited
 ## Postman Validations. 
 To simple testing this API I have added some pre-defined postman calls. in the following files  **Notes Example.postman_collection.json**
 
-## Api Over
+## Api Overview
 
 ### Get All Notes
 Route https://localhost:44363/note/createnote
