@@ -49,6 +49,7 @@ namespace NotesExampleApi.Controllers
                 if (noteModel is null)
                     return null;   
                 
+                //Just return the note they created, this would be usefull if they needed the ID in a full app
                 return noteModel;
             }
 
@@ -108,8 +109,9 @@ namespace NotesExampleApi.Controllers
 
             catch (Exception e)
             {
-                return   NoContent();
                 //Normally this should be logged. 
+                return StatusCode(500); 
+                
             }
         }
 
@@ -132,11 +134,12 @@ namespace NotesExampleApi.Controllers
                 if (!(note.Content == null))
                     foundNote.Contents = note.Content;
 
+
                 foundNote.EditDate = DateTime.Now;
 
                 await _context.SaveChangesAsync();
 
-                return null;
+                return foundNote;
             }
 
             catch (Exception e)
@@ -144,7 +147,6 @@ namespace NotesExampleApi.Controllers
                 return null;
             }
         }
-
 
         [HttpPost("{num}")]
         [Route("createrandomnotesfortesting/{num:int}", Name = "Create Random Notes Testing")]
@@ -159,35 +161,15 @@ namespace NotesExampleApi.Controllers
 
             catch (Exception e)
             {
-                return null;
                 //Normally this should be logged. 
+                return null;           
             }
-        }
-
-
-       
-
-        /// <summary>
-        /// Creates some sample notes
-        /// </summary>
-        private void CreateSampleNotes()
-
-        {
-            var exNotes = DevelopTestingData.CreateSomeSampleNotes();
-
-            foreach (NoteModel n in exNotes)
-            {
-                _context.notes.Add(n);
-            }
-
-            _context.SaveChanges();
         }
 
         /// <summary>
         /// Creates some sample notes
         /// </summary>
         private async void CreateRandomeNotes(int num)
-
         {
             var exNotes = DevelopTestingData.CreateNumberOfRandomNotes(num);
 
