@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+*.suo
+*.dll
+*.exe
+*.pdb
+*.cache
+*.CopyComplete
+/.vs/slnx.sqlite
+/NotesExampleApi/NotesExampleApi/bin
