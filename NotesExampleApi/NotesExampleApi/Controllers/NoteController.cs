@@ -11,6 +11,8 @@ using NotesExampleApi.Models;
 namespace NotesExampleApi.Controllers
 {
 
+    //Simple APi to add notes. This was done for an example.
+
     [ApiController]
     [Route("noteapi")]
     public class NoteController : ControllerBase
@@ -104,7 +106,7 @@ namespace NotesExampleApi.Controllers
                 _context.notes.Remove(note);
                 await _context.SaveChangesAsync();
 
-                return NoContent();
+                return StatusCode(200);
             }
 
             catch (Exception e)
